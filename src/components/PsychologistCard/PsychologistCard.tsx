@@ -149,7 +149,7 @@ export default function PsychologistCard({
           <img
             src={
               isFavorite
-                ? "/src/assets/vectors/FavoriteFill.svg"
+                ? "/src/assets/vectors/FavoriteFull.svg"
                 : "/src/assets/vectors/FavoriteEmpty.svg"
             }
             alt="Icon Favorite"
