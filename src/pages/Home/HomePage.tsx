@@ -44,7 +44,7 @@ export default function Home() {
           </div>
           <div className={css.iconContainerHero1}>
             <img
-              src={`${import.meta.env.BASE_URL}/vectors/people.svg"`}
+              src={`${import.meta.env.BASE_URL}/vectors/people.svg`}
               alt="Icon People"
               width={48}
               height={48}
