@@ -26,7 +26,7 @@ export default function Home() {
           >
             Get started{" "}
             <img
-              src="/src/assets/vectors/Arrow.svg"
+              src={`${import.meta.env.BASE_URL}/vectors/Arrow.svg`}
               alt="Icon Arrow"
               width={18}
               className={css.iconBtnHero}
@@ -36,15 +36,15 @@ export default function Home() {
         <div className={css.rightInfo}>
           <div className={css.imageContainerHero}>
             <img
-              srcSet="/src/assets/images/heroImage1x.jpg 1x, /src/assets/images/heroImage@2x.jpg 2x"
-              src="/src/assets/images/heroImage1x.jpg"
+              srcSet={`${import.meta.env.BASE_URL}/images/heroImage1x.jpg 1x, ${import.meta.env.BASE_URL}/images/heroImage@2x.jpg 2x`}
+              src={`${import.meta.env.BASE_URL}/images/heroImage1x.jpg"`}
               alt="Photo Hero Section"
               className={css.photoHero}
             />
           </div>
           <div className={css.iconContainerHero1}>
             <img
-              src="/src/assets/vectors/people.svg"
+              src={`${import.meta.env.BASE_URL}/vectors/people.svg"`}
               alt="Icon People"
               width={48}
               height={48}
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
           <div className={css.iconContainerHero2}>
             <img
-              src="/src/assets/vectors/question.svg"
+              src={`${import.meta.env.BASE_URL}/vectors/question.svg`}
               alt="Icon People"
               width={40}
               height={40}
@@ -60,7 +60,10 @@ export default function Home() {
           </div>
           <div className={css.cardPhotoHero}>
             <div className={css.iconCardHeroContainer}>
-              <img src="/src/assets/vectors/Check.svg" alt="Icon Card Hero"/>
+              <img
+                src={`${import.meta.env.BASE_URL}/vectors/Check.svg`}
+                alt="Icon Card Hero"
+              />
             </div>
             <div className={css.textsCardHero}>
               <h3 className={css.titleCardHero}>Experienced psychologists</h3>

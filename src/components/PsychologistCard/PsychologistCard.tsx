@@ -94,7 +94,7 @@ export default function PsychologistCard({
                       <p className={css.nameReviewerPsyc}>{review.reviewer}</p>
                       <div className={css.reviewerRatingContainer}>
                         <img
-                          src="/src/assets/vectors/Star.svg"
+                          src={`${import.meta.env.BASE_URL}/vectors/Star.svg`}
                           alt="Icon Star"
                           width={16}
                           height={16}
@@ -125,7 +125,10 @@ export default function PsychologistCard({
       </div>
       <div className={css.ratingPsychologistContainer}>
         <div className={css.starContainer}>
-          <img src="/src/assets/vectors/Star.svg" alt="Icon Star" />
+          <img
+            src={`${import.meta.env.BASE_URL}/vectors/Star.svg`}
+            alt="Icon Star"
+          />
         </div>
         <div className={css.numberRatingContainer}>
           <p className={css.numberRating}>Rating: {psychologist.rating}</p>
@@ -149,8 +152,8 @@ export default function PsychologistCard({
           <img
             src={
               isFavorite
-                ? "/src/assets/vectors/FavoriteFull.svg"
-                : "/src/assets/vectors/FavoriteEmpty.svg"
+                ? `${import.meta.env.BASE_URL}/vectors/FavoriteFull.svg`
+                : `${import.meta.env.BASE_URL}/vectors/FavoriteEmpty.svg`
             }
             alt="Icon Favorite"
           />

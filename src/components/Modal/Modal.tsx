@@ -21,7 +21,7 @@ export default function Modal({ children, onClose }: Props) {
       <div className={css.modal} onClick={(e) => e.stopPropagation()}>
         <button type="button" className={css.closeBtn} onClick={onClose}>
           <img
-            src="/src/assets/vectors/close.svg"
+            src={`${import.meta.env.BASE_URL}/vectors/close.svg`}
             alt="Icon Close"
             width={32}
             height={32}

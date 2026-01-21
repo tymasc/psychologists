@@ -94,8 +94,8 @@ export default function LoginModal({ onSuccess }: Props) {
                   <img
                     src={
                       isVisible
-                        ? `/src/assets/vectors/passwordVisibleOff.svg`
-                        : `/src/assets/vectors/passwordVisibleOn.svg`
+                        ? `${import.meta.env.BASE_URL}/vectors/passwordVisibleOff.svg`
+                        : `${import.meta.env.BASE_URL}/vectors/passwordVisibleOn.svg`
                     }
                     alt="Icon Password"
                     width={20}

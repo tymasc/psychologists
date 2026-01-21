@@ -52,7 +52,7 @@ export default function Header() {
                 <img
                   src={
                     user.photoURL ??
-                    "/src/assets/vectors/DefaultProfilePhoto.svg"
+                    `${import.meta.env.BASE_URL}/vectors/DefaultProfilePhoto.svg`
                   }
                   alt="Profile photo"
                   className="avatar"

@@ -118,7 +118,7 @@ export default function Psychologists() {
             </p>
             <span className={css.arrow}>
               <img
-                src="/src/assets/vectors/arrow-select.svg"
+                src={`${import.meta.env.BASE_URL}/vectors/arrow-select.svg`}
                 alt="Icon Arrow"
                 className={
                   isOpen ? `${css.iconArrow} ${css.activeIcon}` : css.iconArrow
