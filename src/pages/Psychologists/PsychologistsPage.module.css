@@ -1,0 +1,152 @@
+.sectionPsychologists {
+  padding: 64px 128px 100px 128px;
+}
+
+.textFilterContainer {
+  padding-bottom: 8px;
+}
+
+.titleFilter {
+  color: rgba(138, 138, 137, 1);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filterSelect {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 18px;
+  border-radius: 14px;
+  -webkit-appearance: none;
+  background-color: #fc832c;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+.filterOptions {
+  position: relative;
+}
+
+.filterButton {
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: none;
+  background-color: #fc832c;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 124px;
+}
+
+.filterSee {
+  color: rgba(251, 251, 251, 1);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.iconArrow {
+  transform: rotate(-180deg);
+}
+
+.activeIcon {
+  transform: rotate(0deg);
+}
+
+.filterDropdown {
+  position: absolute;
+  top: 108%;
+  left: 0;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 14px 18px;
+  z-index: 10;
+}
+
+.filterItem {
+  padding-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  color: rgba(25, 26, 21, 0.3);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.active {
+  color: rgba(25, 26, 21, 1);
+}
+
+.buttonLoadMoreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonLoadMore {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 40px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #fc832c;
+  border: none;
+  outline: none;
+}
+
+.loadingContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffffe1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  /* z-index: 9999; */
+}
+
+/* Когда лоадер активен */
+.loadingContainer.activeLoader {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Спиннер */
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #fc832c;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

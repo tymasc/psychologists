@@ -1,0 +1,155 @@
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.tabs button {
+  border: none;
+  background: #f3f4f6;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.active {
+  background: #f97316;
+  color: white;
+}
+
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.formTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  color: rgba(25, 26, 21, 1);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.labelsContainerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.desc {
+  color: rgba(25, 26, 21, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 435px;
+}
+
+.formContainerInputs {
+  width: 100%;
+}
+
+.labelContainerForm,
+.labelContainerFormPassword {
+  width: 100%;
+}
+
+.labelEmail {
+  width: 100%;
+  display: block;
+}
+
+.inputForm {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px 18px;
+  border: 1px solid rgba(25, 26, 21, 0.1);
+  border-radius: 12px;
+  color: rgba(25, 26, 21, 1);
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.inputForm::placeholder {
+  color: rgba(25, 26, 21, 1);
+}
+
+.labelEmail {
+  position: relative;
+}
+
+.buttonHintPassword {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.buttonForm {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 40px;
+  outline: none;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #fc832c;
+  border: none;
+  width: 100%;
+}
+
+.loadingContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffffe1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loadingContainer.activeLoader {
+  opacity: 1;
+  visibility: visible;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #fc832c;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

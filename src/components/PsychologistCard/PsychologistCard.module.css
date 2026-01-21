@@ -1,0 +1,209 @@
+.cardContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(251, 251, 251, 1);
+}
+
+.photoContainer {
+  position: relative;
+  padding: 12px;
+  border: 2px solid rgba(252, 131, 44, 0.2);
+  border-radius: 30px;
+}
+
+.photoPsychologist {
+  border-radius: 15px;
+}
+
+.onlineStatusContainer {
+  position: absolute;
+  top: 9px;
+  right: 14px;
+  background-color: #fbfbfb;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onlineStatus {
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  background-color: #38cd3e;
+}
+
+.nameContainer {
+  padding-bottom: 24px;
+}
+
+.typePsychologist {
+  color: rgba(138, 138, 137, 1);
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+.namePsychologist {
+  color: rgba(25, 26, 21, 1);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.blocksPsychologist {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-bottom: 24px;
+}
+
+.blockPsychologist {
+  padding: 8px 16px;
+  border-radius: 24px;
+  background: rgba(243, 243, 243, 1);
+}
+
+.textBlockPsychologist {
+  color: #8a8a89;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.textInfoPsych {
+  color: #191a15;
+}
+
+.aboutPsychologistContainer {
+  padding-bottom: 14px;
+}
+
+.aboutPsychologist {
+  color: rgba(25, 26, 21, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.buttonReadMore {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgba(25, 26, 21, 1);
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.ratingPsychologistContainer {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.starContainer {
+  padding-right: 8px;
+}
+
+.numberRating {
+  color: rgba(25, 26, 21, 1);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.lineBetween {
+  width: 16px;
+  margin: 0px 16px;
+  transform: rotate(90deg);
+  border: 1px solid rgba(25, 26, 21, 0.2);
+}
+
+.pricePsychologistContainer {
+  padding-right: 28px;
+}
+
+.pricePsychologist {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.pricePsychologistNumb {
+  color: #38cd3e;
+}
+
+.buttonFavorite {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.reviewersContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+    padding-bottom: 40px;
+}
+
+.reviewerContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.firstBlock {
+    display: flex;
+    gap: 12px;
+}
+
+.reviewerImageContainer {
+  border-radius: 100px;
+  background: rgba(252, 131, 44, 0.2);
+  color: rgba(252, 131, 44, 1);
+  font-size: 20px;
+  font-weight: 500;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoReviewer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.reviewerRatingContainer {
+    display: flex;
+    gap: 8px;
+}
+
+.textReviewer {
+    color: rgba(25, 26, 21, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.buttonMakeAppointment {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 40px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #fc832c;
+  border: none;
+  outline: none;
+}

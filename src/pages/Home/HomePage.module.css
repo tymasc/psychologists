@@ -1,0 +1,105 @@
+.sectionHero {
+  padding: 78px 128px 100px 128px;
+  position: relative;
+}
+
+.heroInfoContainer {
+  display: flex;
+}
+
+.leftInfo {
+  padding-right: 125px;
+}
+
+.heroText {
+  font-size: 80px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.heroTextSpan {
+  font-style: italic;
+  color: #fc832c;
+}
+
+.heroDesc {
+  font-weight: 500;
+  font-size: 18px;
+  padding-right: 85px;
+  padding-bottom: 40px;
+}
+
+.buttonHero {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 18px 50px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background-color: #fc832c;
+  display: flex;
+  color: #fff;
+  gap: 18px;
+}
+
+.rightInfo {
+  z-index: 1000;
+  position: relative;
+}
+
+.photoHero {
+  border-radius: 10px;
+}
+
+.iconContainerHero1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(40px, 38px);
+}
+
+.iconContainerHero2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-30px, 185px);
+}
+
+.cardPhotoHero {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background-color: rgba(252, 131, 44, 1);
+  border-radius: 20px;
+  width: 311px;
+  height: 118px;
+  transform: translate(-101px, -190px);
+}
+
+.titleCardHero {
+  font-size: 14px;
+  color: rgba(251, 251, 251, 0.5);
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+
+.priceCardHero {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.eclipseShadow {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translate(38px, 137px);
+  width: 469px;
+  height: 469px;
+  background-color: rgba(252, 131, 44, 1);
+  filter: blur(200px);
+  border-radius: 50%;
+}

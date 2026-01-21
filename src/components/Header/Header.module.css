@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 128px;
+  border-bottom: 1px solid rgba(25, 26, 21, 0.1);
+}
+
+.headerBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logoFite {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fc832c;
+}
+
+.logoSete {
+  color: #191a15;
+  font-weight: 600;
+}
+
+.navBar {
+  display: flex;
+  gap: 40px;
+}
+
+.navBarComponent {
+  position: relative;
+  text-decoration: none;
+  color: rgba(25, 26, 21, 1);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #fc832c;
+  border-radius: 50%;
+}
+
+.buttonsAccountsContainer {
+  display: flex;
+  gap: 28px;
+}
+
+.userInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.buttonsContainerHeader {
+  display: flex;
+  gap: 8px;
+}
+
+.buttonHeader {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 40px;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid rgba(25, 26, 21, 0.2);
+  outline: none;
+  border-radius: 30px;
+}
+
+.buttonHeaderLogOut {
+  color: #fff;
+  background-color: #fc832c;
+  border: none;
+}
