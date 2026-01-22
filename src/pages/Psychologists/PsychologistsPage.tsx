@@ -10,6 +10,7 @@ import {
   addFavorite,
   removeFavorite,
 } from "../../service/favoritesService";
+import { toast } from "react-toastify";
 
 export default function Psychologists() {
   const [filter, setFilter] = useState<FilterType>("AZ");
@@ -155,6 +156,7 @@ export default function Psychologists() {
             isFavorite={!!favorites[psychologist.id]}
             onToggleFavorite={async (id) => {
               if (!user) {
+                toast.error("Please log in to add psychologist to favorites");
                 return;
               }
 

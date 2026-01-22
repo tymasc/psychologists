@@ -1,6 +1,8 @@
 import css from "./PsychologistCard.module.css";
 import { useState } from "react";
 import { Props } from "../../types/psychologist";
+import Modal from "../Modal/Modal";
+import AppointmentModal from "../AppointModal/AppointModal";
 
 export default function PsychologistCard({
   psychologist,
@@ -8,6 +10,7 @@ export default function PsychologistCard({
   onToggleFavorite,
 }: Props) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAppointmentOpen, setIsAppointmentOpen] = useState(false);
 
   return (
     <div className={css.cardContainer}>
@@ -114,8 +117,8 @@ export default function PsychologistCard({
             <div className={css.buttonPsychologistContainer}>
               <button
                 type="button"
-                id="buttonCreateAppointment"
                 className={css.buttonMakeAppointment}
+                onClick={() => setIsAppointmentOpen(true)}
               >
                 Make an appointment
               </button>
@@ -159,6 +162,16 @@ export default function PsychologistCard({
           />
         </button>
       </div>
+      {isAppointmentOpen && (
+        <Modal onClose={() => setIsAppointmentOpen(false)}>
+          <AppointmentModal
+            psychologistId={psychologist.id}
+            psychologistPhoto={psychologist.avatar_url}
+            psychologistName={psychologist.name}
+            onSuccess={() => setIsAppointmentOpen(false)}
+          />
+        </Modal>
+      )}
     </div>
   );
 }

@@ -12,10 +12,6 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
-console.log("firebaseConfig:", firebaseConfig);
-console.log("projectId:", firebaseConfig.projectId);
-console.log("databaseURL:", firebaseConfig.databaseURL);
-
 export const app = initializeApp(firebaseConfig);
 
 export const db = getDatabase(app);
