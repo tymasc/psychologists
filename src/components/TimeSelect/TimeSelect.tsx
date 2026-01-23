@@ -1,6 +1,6 @@
 import * as Select from "@radix-ui/react-select";
 import { useMemo } from "react";
-import css from "./TimeSelect.module.css";
+import css from "./TImeSelect.module.css";
 
 type Props = {
   value: string;
